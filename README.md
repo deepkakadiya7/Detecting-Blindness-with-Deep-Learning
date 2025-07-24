@@ -48,14 +48,15 @@ code-04-inference.ipynb: Predict test images using the trained model
 
 🛠️ Requirements
 To run this project, set up a virtual environment using conda:
-
+```
 bash
 Copy
 Edit
 conda create -n aptos python=3.7
 conda activate aptos
 Install the required Python packages:
-
+```
+```
 bash
 Copy
 Edit
@@ -63,6 +64,7 @@ pip install torch torchvision
 pip install efficientnet-pytorch
 pip install opencv-python
 pip install scikit-learn pandas numpy matplotlib seaborn scipy tqdm
+```
 ⬇️ Data & Model Weights
 ⚠️ Note: Due to size constraints, the datasets and pre-trained weights are not included in this repository.
 
