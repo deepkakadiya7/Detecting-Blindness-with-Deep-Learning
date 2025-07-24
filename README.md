@@ -37,3 +37,36 @@ We utilize data from the [APTOS 2019 Blindness Detection competition](https://ww
 ├── proposal.pdf
 └── report.pdf
 ```
+🧪 Notebooks Overview
+code-01-data-exploration.ipynb: Data visualization and exploration
+
+code-02-pre-training.ipynb: Pre-train CNN on the 2015 supplementary dataset
+
+code-03-training.ipynb: Fine-tune the CNN on the 2019 main dataset
+
+code-04-inference.ipynb: Predict test images using the trained model
+
+🛠️ Requirements
+To run this project, set up a virtual environment using conda:
+
+bash
+Copy
+Edit
+conda create -n aptos python=3.7
+conda activate aptos
+Install the required Python packages:
+
+bash
+Copy
+Edit
+pip install torch torchvision
+pip install efficientnet-pytorch
+pip install opencv-python
+pip install scikit-learn pandas numpy matplotlib seaborn scipy tqdm
+⬇️ Data & Model Weights
+⚠️ Note: Due to size constraints, the datasets and pre-trained weights are not included in this repository.
+
+📄 References
+APTOS 2019 Blindness Detection Competition
+
+
