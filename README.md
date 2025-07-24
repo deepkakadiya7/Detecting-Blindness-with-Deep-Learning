@@ -7,13 +7,7 @@
 Diabetic retinopathy (DR) is one of the leading causes of vision loss. Early detection and treatment are crucial steps toward preventing DR.  
 This project considers DR detection as an **ordinal classification task** and aims to develop a deep learning model that predicts the severity of DR based on a patient's retina photograph.
 
-This project was completed under the [Udacity ML Engineer Nanodegree](https://confirm.udacity.com/LMMJDA7C).  
 We utilize data from the [APTOS 2019 Blindness Detection competition](https://www.kaggle.com/c/aptos2019-blindness-detection/data) hosted on Kaggle.
-
-📄 For a detailed walkthrough, check the [project blog post](https://kozodoi.me/python/deep%20learning/computer%20vision/competitions/2020/07/11/blindness-detection.html).  
-You can also find a complete PDF description of the project in `report.pdf`.
-
----
 
 ## 🗂️ Project Structure
 
