@@ -49,7 +49,7 @@ code-04-inference.ipynb: Predict test images using the trained model
 🛠️ Requirements
 To run this project, set up a virtual environment using conda:
 ```
-conda create -n aptos python=3.7
+conda create -n aptos python=3.10
 conda activate aptos
 Install the required Python packages:
 ```
