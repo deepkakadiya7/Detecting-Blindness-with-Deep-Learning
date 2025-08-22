@@ -22,5 +22,6 @@ def init_model(model_name, train=True, trn_layers=2):
  # Freeze all layers
         for param in model.parameters():
           param.requires_grad = False  
+             return model
 
     
