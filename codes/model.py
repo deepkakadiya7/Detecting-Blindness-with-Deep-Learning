@@ -21,5 +21,6 @@ def init_model(model_name, train=True, trn_layers=2):
         model.load_state_dict(torch.load(f'../models/model_{model_name}.bin', map_location=torch.device('cpu')))
  # Freeze all layers
         for param in model.parameters():
+          param.requires_grad = False  
 
     
