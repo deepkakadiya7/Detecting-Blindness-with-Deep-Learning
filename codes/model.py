@@ -19,3 +19,7 @@ def init_model(model_name, train=True, trn_layers=2):
                 else:
         # Load model state dict for inference mode
         model.load_state_dict(torch.load(f'../models/model_{model_name}.bin', map_location=torch.device('cpu')))
+ # Freeze all layers
+        for param in model.parameters():
+
+    
