@@ -19,3 +19,14 @@ class EyeData(Dataset):
         self.directory = directory
         self.transform = transform
         self.image_size = image_size  # Store image size
+ def __len__(self):
+        return len(self.data)  # Return the number of samples
+
+    def __getitem__(self, idx):
+        img_id = str(self.data.loc[idx, 'id_code']).strip()  # Get image ID
+        img_name = find_image_file(self.directory, img_id)  # Find image file
+        image = prepare_image(img_name, self.image_size, do_random_crop=True)  # Preprocess the image
+        if self.transform is not None:
+            image = self.transform(image)  # Apply transformations if any
+        label = torch.tensor(self.data.loc[idx, 'diagnosis'])  # Get label
+        return {'image': image, 'label': label}  # Return the image and label
